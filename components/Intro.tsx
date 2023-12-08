@@ -5,7 +5,6 @@ import img from "@/lib/img.jpeg";
 import Link from "next/link";
 import { FaFileDownload } from "react-icons/fa";
 
-// import resume  from "@/lib/ayush_vishwakarma_resume.pdf";
 
 import {BsArrowRight, BsGithub, BsLinkedin} from "react-icons/bs";
 function Intro ( ) { 
@@ -31,7 +30,7 @@ function Intro ( ) {
                 </div>
 
             </div> 
-            <motion.p 
+            <motion.h1 
             initial={{opacity:0 , y:200}}
             animate={{opacity:1 , y:0}}   
             className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl ">
@@ -60,25 +59,25 @@ function Intro ( ) {
                     </span> 
 
 
-            </motion.p>
+            </motion.h1>
 
             <motion.div
             initial={{  opacity:0 , y:100}}
             animate={{  opacity:1 , y:0}}
             transition={{delay:0.4}}
             className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium  ">
-                <Link href="#contact" className="bg-gray-900 text-white  px-7 py-3 flex items-center gap-2 rounded-full
+                <Link href="#contact" className=" cursor-pointer  group bg-gray-900 text-white  px-7 py-3 mr-2 flex items-center gap-2 rounded-full
                                                     outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950  scale-105 transition " >
-                    Contact Me Here <BsArrowRight/>
+                    Contact Me Here <  BsArrowRight className="opacity-70 group-hover:translate-x-2 transition "  />
                 </Link>
-                <a href="" className="bg-white text-gray-900  px-7 py-3 flex items-center gap-2 rounded-full " download={true} >
-                    Resume  <FaFileDownload/>   
+                <a className="cursor-pointer group bg-gray-100  text-gray-900  px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-200 scale-105 transition border border-black/10 "  href="/r.pdf" download >
+                    Resume  <FaFileDownload className="  opacity-70 group-hover:translate-y-1 transition "   />   
                 </a>
-                <a href="" className="bg-white text-gray-800  px-4 py-3 flex items-center gap-2 rounded-full ">
-                    <BsLinkedin/>
+                <a href="https://www.linkedin.com/in/ayush-vishwakarma1/" target="_blank" className="cursor-pointer  group bg-gray-100 text-gray-800  px-4 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-200  scale-105 transition border-black/10  ">
+                    <BsLinkedin className="opacity-70 group-hover:translate-x-2 transition "  />
                 </a>
-                <a href="" className=" text-[1.35rem] bg-white text-gray-800  px-4 py-3 flex items-center gap-2 rounded-full ">
-                    <BsGithub/>
+                <a href="https://github.com/Ayush-Vish/" target="_blank" className="cursor-pointer  group text-[1.35rem] bg-gray-100 text-gray-800  px-4 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-200  scale-105 transition  border-black/10 ">
+                    <BsGithub className="opacity-70 group-hover:-translate-x-2 transition "  />
                 </a>
             </motion.div>
         </section>
