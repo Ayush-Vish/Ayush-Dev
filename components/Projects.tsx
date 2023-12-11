@@ -8,7 +8,7 @@ function Projects ( )  {
     
 
     return ( 
-        <section id="projects" >
+        <section id="projects" className="scroll-m-28" >
             <SectionHadding>
                 My Projects
             </SectionHadding>

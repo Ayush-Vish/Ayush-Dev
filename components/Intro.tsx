@@ -11,7 +11,7 @@ function Intro ( ) {
 
 
     return ( 
-        <section className="mb-28  max-w-[50rem] text-center "> 
+        <section id="home" className="mb-28  max-w-[50rem] text-center scroll-m-28"> 
             <div className="flex items-center justify-center "> 
                 <div className="relative ">
                     <motion.div 

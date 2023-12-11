@@ -6,8 +6,10 @@ import { motion } from "framer-motion"
 
 import {links} from "@/lib/data";
 import Link from "next/link";
-
+import clsx from "clsx";
+import { useState } from "react";
 function Header ( ) {
+    const [activeSession , setActiveSession] = useState("Home")
 
     return (
        <header className="z-[99] relative" >
@@ -24,8 +26,28 @@ function Header ( ) {
                                 initial={{y:-100 , opacity:0}}
                                 animate={{y:0 , opacity:1}}
                                 transition={{delay:0.2}}
-                            className="h-3/4 flex items-center justify-center " key={e.hash} >
-                                <Link className="w-full items-center justify-center p-3 hover:text-gray-700  transition-all ease-in-out duration-300 " href={e.hash}> {e.name}</Link>
+                            className="h-3/4 flex items-center justify-center relative " key={e.hash} >
+                                <Link className={clsx("w-full items-center justify-center p-3 hover:text-gray-700  transition-all ease-in-out duration-300" , {
+                                        "text-gray-950  " : activeSession ==e.name
+                                    })} 
+                                    href={e.hash}
+                                    onClick={()=> setActiveSession(e.name)}
+                                    >
+                                         {e.name}
+                                    {
+                                        e.name ===activeSession &&  (
+
+                                            <motion.span 
+                                            layoutId="activeSession"
+                                            transition={{
+                                                type: "spring", 
+                                                stiffness : 380,
+                                                damping : 30
+                                            }}
+                                            className="bg-gray-200 rounded-full absolute inset-0 -z-10"></motion.span>
+                                        )
+                                    }
+                                </Link>
                             </motion.li >
                         ))
                     }
