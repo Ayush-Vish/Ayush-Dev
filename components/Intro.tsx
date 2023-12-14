@@ -7,11 +7,12 @@ import { FaFileDownload } from "react-icons/fa";
 
 
 import {BsArrowRight, BsGithub, BsLinkedin} from "react-icons/bs";
+import { useSectionViews } from "@/lib/hooks";
 function Intro ( ) { 
 
-
+    const {ref  } = useSectionViews ("Home" , 0.5 );
     return ( 
-        <section id="home" className="mb-28  max-w-[50rem] text-center scroll-m-28"> 
+        <section ref={ref} id="home" className="mb-28  max-w-[50rem] text-center scroll-m-28"> 
             <div className="flex items-center justify-center "> 
                 <div className="relative ">
                     <motion.div 

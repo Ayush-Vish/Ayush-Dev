@@ -21,6 +21,9 @@ function Project ( { title ,description ,imageUrl ,tags , liveLink , githubLinkF
     const scaleProgress=  useTransform(scrollYProgress, [0, 1], [0.7, 1])
     const opacityProgress=  useTransform(scrollYProgress, [0, 1], [0.6, 1])
 
+
+    
+
     return ( 
         <motion.div
         ref={ref}

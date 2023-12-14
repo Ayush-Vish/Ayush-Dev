@@ -4,12 +4,13 @@
 
 
 import SectionHadding from "./SectionHading";
-import { motion } from "framer-motion"
+import { motion} from "framer-motion"
+import { useSectionViews } from "@/lib/hooks";
 function About ( ) {
-
-
+    const {ref  } = useSectionViews ("About" , 0.75 );
     return (
         <motion.section
+        ref={ref}
         id="about"
         initial={{opacity:0 ,y:100}}
         animate={{opacity: 1  , y:0}}

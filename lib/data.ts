@@ -22,16 +22,16 @@ export const links = [
         hash: "#projects"
     },
     {
-        name:"Contact",
-        hash: "#contact"
-    },
-    {
         name:"Skills",
         hash: "#skills"
     },
     {
         name:"Experience",
         hash: "#experience"
+    },
+    {
+        name:"Contact",
+        hash: "#contact"
     }
 ] as const;
 
@@ -74,3 +74,29 @@ export const projects = [
 ] as const; 
 
 
+
+
+export const skills = [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "React",
+    "Node",
+    "Express",
+    "MongoDB",
+    "TailwindCSS",
+    "Redux",
+    "Nodemailer",
+    "Git",
+    "GitHub",
+    "VSCode",
+    "Figma",
+    "PostgreSQl",
+    "C",
+    "C++",
+    "NextJS",
+    "TypeScript",
+    "Postman",
+
+
+] as const

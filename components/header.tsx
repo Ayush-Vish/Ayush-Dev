@@ -7,9 +7,17 @@ import { motion } from "framer-motion"
 import {links} from "@/lib/data";
 import Link from "next/link";
 import clsx from "clsx";
-import { useState } from "react";
+import { useContext, useState } from "react";
+
+import {ActiveSectionContext, ActiveSectionContextType, useActiveSectionContext} from "@/context/active-section-context";
 function Header ( ) {
-    const [activeSession , setActiveSession] = useState("Home")
+
+
+    
+    const {activeSession ,setActiveSession  ,setTimeOfLastClick}= useActiveSectionContext(); ;
+    
+
+    
 
     return (
        <header className="z-[99] relative" >
@@ -31,7 +39,11 @@ function Header ( ) {
                                         "text-gray-950  " : activeSession ==e.name
                                     })} 
                                     href={e.hash}
-                                    onClick={()=> setActiveSession(e.name)}
+                                    onClick={()=>{
+                                        setActiveSession(e.name);
+                                        setTimeOfLastClick(Date.now());
+
+                                    }}
                                     >
                                          {e.name}
                                     {
