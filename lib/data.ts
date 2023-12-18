@@ -7,6 +7,7 @@ import url from "@/public/Screenshot from 2023-12-07 09-23-03.png";
 import blog from "@/public/kjjsbd.png";
 import lms from "@/public/Screenshot from 2023-12-07 09-23-36.png";
 import pokedex from "@/public/Screenshot from 2023-12-07 09-27-10.png";
+import { BsGoogle, BsMicrosoft, BsPaintBucket } from "react-icons/bs";
 
 export const links = [
     {
@@ -45,7 +46,17 @@ export const projects = [
         liveLink:  "https://linkshort-bay.vercel.app/",
         githubLinkFrontend: "", 
         githubLinkBackend: ""
-    }, {
+    }, 
+    {
+       title : "LMS - Learning  Management System",
+       description : "",
+       tags: ["React", "Node", "Express", "MongoDB", "TailwindCSS" , "Nodemailer" ],
+       imageUrl : lms, 
+       liveLink:  "https://lms-frontend-opal.vercel.app/",
+       githubLinkFrontend: "", 
+       githubLinkBackend: ""
+   },
+    {
         title : "Brand - Blog App",
         description : "A blog app built with JavaScript, Node, Express and MongoDB. User can create a new blog. User can also see the details of the blog. User can also see the number of likes and comments on the blog. User can also update the profile picture and the name.",
         tags: ["HTML" , "CSS", "Node", "Express", "MongoDB",  "JavaScript"],
@@ -54,15 +65,8 @@ export const projects = [
         githubLinkFrontend: "", 
         githubLinkBackend: ""
 
-    }, {
-        title : "LMS - Learning  Management System",
-        description : "",
-        tags: ["React", "Node", "Express", "MongoDB", "TailwindCSS" , "Nodemailer" ],
-        imageUrl : lms, 
-        liveLink:  "https://lms-frontend-opal.vercel.app/",
-        githubLinkFrontend: "", 
-        githubLinkBackend: ""
-    }, {
+    },
+     {
         title : "Pokedex",
         description : "A Pokedex built with React, Node, Express and MongoDB. User can create a new book, update the existing book and delete the book. User can also see the details of the book. User can also see the number of likes and comments on the book.",
         tags: ["React", "Node", "Express", "MongoDB", "TailwinfdCSS" , "JavaScript"],
@@ -97,6 +101,39 @@ export const skills = [
     "NextJS",
     "TypeScript",
     "Postman",
+    "Framer Motion"
 
 
 ] as const
+
+
+export const experienceData = [
+    {
+
+        title :"Software Developer at google" ,
+        location : "Bengaluruuuu" ,
+        description : "Making google Gemini an AI Based Human " ,
+        icon : React.createElement(BsGoogle), 
+        data  : "2027"
+    },
+    {
+            
+        title :"Software Developer at Microsoft" ,
+        location : "Hyderabad" ,
+        description : "Making google Gemini an AI Based Human " ,
+        icon : React.createElement(BsMicrosoft), 
+        data  : "2026"
+    },
+    {
+
+        title :"Software Developer at Atlassian" ,
+        location : "Noida" ,
+        description : "Making google Gemini an AI Based Human " ,
+        icon : React.createElement(BsPaintBucket), 
+        data  : "2027"
+    },
+        
+    
+
+] as const;
+
