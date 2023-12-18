@@ -11,9 +11,12 @@ export const sendEmail = async (formData : FormData) => {
     const email = formData.get("email") ;
     console.log(message , email) ;
     if(!message  ||     typeof message !== "string" || typeof email !== "string" ||  !email) return {error : "Invalid Messagee"}
+    
     console.log("Sending email") ;  
+    let data ; 
+
     try {
-        await resend.emails.send({
+        data = await resend.emails.send({
             from :"Portfolio ka message <onboarding@resend.dev>" ,
             to : "ayushvish6555@gmail.com", 
             subject : "Portfolio ka message aaya h from  " + email ,
@@ -32,4 +35,5 @@ export const sendEmail = async (formData : FormData) => {
         }
         
     }
+    return {data : data} ;
 }
