@@ -44,8 +44,8 @@ export const projects = [
         tags: ["React", "Node", "Express", "MongoDB", "TailwindCSS" , "JavaScript" , "Redux"],
         imageUrl : url, 
         liveLink:  "https://linkshort-bay.vercel.app/",
-        githubLinkFrontend: "", 
-        githubLinkBackend: ""
+        githubLinkFrontend: "https://github.com/Ayush-Vish/linkShort", 
+        githubLinkBackend: "https://github.com/Ayush-Vish/url-SHORTENER/"
     }, 
     {
        title : "LMS - Learning  Management System",
@@ -53,8 +53,8 @@ export const projects = [
        tags: ["React", "Node", "Express", "MongoDB", "TailwindCSS" , "Nodemailer" ],
        imageUrl : lms, 
        liveLink:  "https://lms-frontend-opal.vercel.app/",
-       githubLinkFrontend: "", 
-       githubLinkBackend: ""
+       githubLinkFrontend: "https://github.com/Ayush-Vish/lms-frontend", 
+       githubLinkBackend: "https://github.com/ayush-Vish/lms-server"
    },
     {
         title : "Brand - Blog App",
@@ -62,8 +62,8 @@ export const projects = [
         tags: ["HTML" , "CSS", "Node", "Express", "MongoDB",  "JavaScript"],
         imageUrl : blog, 
         liveLink:  "https://rituraj12797.github.io/FRONTEND/",
-        githubLinkFrontend: "", 
-        githubLinkBackend: ""
+        githubLinkFrontend: "https://github.com/rituraj12797/FRONTEND", 
+        githubLinkBackend: "https://github.com/Ayush-Vish/dep"
 
     },
      {
@@ -72,8 +72,8 @@ export const projects = [
         tags: ["React", "Node", "Express", "MongoDB", "TailwinfdCSS" , "JavaScript"],
         imageUrl : pokedex,
         liveLink:  "https://hilarious-caramel-5bd052.netlify.app/",
-        githubLinkFrontend: "", 
-        githubLinkBackend: ""
+        githubLinkFrontend: "https://github.com/Ayush-Vish/pokedex-react/", 
+        githubLinkBackend: "https://github.com/Ayush-Vish/pokedex-react/"
     }
 ] as const; 
 
@@ -101,7 +101,10 @@ export const skills = [
     "NextJS",
     "TypeScript",
     "Postman",
-    "Framer Motion"
+    "Framer Motion",
+    "Material UI",
+    "Bootstrap",
+    "Docker"
 
 
 ] as const
