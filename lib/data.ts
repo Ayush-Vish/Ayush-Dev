@@ -1,6 +1,5 @@
 import React from "react";
 
-import {CgWorkAlt} from "react-icons/cg";
 
 
 import url from "@/public/Screenshot from 2023-12-07 09-23-03.png";

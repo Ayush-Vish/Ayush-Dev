@@ -7,9 +7,8 @@ import { motion } from "framer-motion"
 import {links} from "@/lib/data";
 import Link from "next/link";
 import clsx from "clsx";
-import { useContext, useState } from "react";
 
-import {ActiveSectionContext, ActiveSectionContextType, useActiveSectionContext} from "@/context/active-section-context";
+import { useActiveSectionContext} from "@/context/active-section-context";
 function Header ( ) {
 
 

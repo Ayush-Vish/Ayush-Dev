@@ -3,11 +3,9 @@
 
 import React from 'react'
 import SectionHadding from './SectionHading'
-import { FaPaperPlane } from 'react-icons/fa'
 import {motion} from 'framer-motion'
 import { useSectionViews } from '@/lib/hooks';
 import { sendEmail } from '@/actions/sendEmail';
-import { useFormStatus } from 'react-dom';
 import Submitbtn from './Submitbtn';
 import toast from 'react-hot-toast';
 function Contact() {
