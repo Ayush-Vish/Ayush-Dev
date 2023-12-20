@@ -15,7 +15,6 @@
     "@react-email/tailwind": "^0.0.13",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
-    "deep-email-validator": "^0.1.21",
     "framer-motion": "^10.16.14",
     "lucide-react": "^0.294.0",
     "next": "14.0.3",
