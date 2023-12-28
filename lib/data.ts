@@ -1,7 +1,4 @@
 import React from "react";
-
-
-
 import url from "@/public/Screenshot from 2023-12-07 09-23-03.png";
 import blog from "@/public/kjjsbd.png";
 import lms from "@/public/Screenshot from 2023-12-07 09-23-36.png";
@@ -48,7 +45,7 @@ export const projects = [
     }, 
     {
        title : "LMS - Learning  Management System",
-       description : "",
+       description : "LMS is built using MERN Stack. Integrated Razorapay payment gateway. Designed a ADMIN Dashboard for the analytics using Chart.js. Implemented nodemailer for password recovery. Utilized multer for image upload and cloudinary for data storage. ",
        tags: ["React", "Node", "Express", "MongoDB", "TailwindCSS" , "Nodemailer" ],
        imageUrl : lms, 
        liveLink:  "https://lms-frontend-opal.vercel.app/",
@@ -67,8 +64,8 @@ export const projects = [
     },
      {
         title : "Pokedex",
-        description : "A Pokedex built with React, Node, Express and MongoDB. User can create a new book, update the existing book and delete the book. User can also see the details of the book. User can also see the number of likes and comments on the book.",
-        tags: ["React", "Node", "Express", "MongoDB", "TailwinfdCSS" , "JavaScript"],
+        description : "Pokedex is a index of Pokemons built using React and TailwindCSS. Implemented debouncing for reducing no. of API Calls and used Context API for state management.",
+        tags: ["React", "Node", "Express", "MongoDB", "TailwindCSS" , "JavaScript"],
         imageUrl : pokedex,
         liveLink:  "https://hilarious-caramel-5bd052.netlify.app/",
         githubLinkFrontend: "https://github.com/Ayush-Vish/pokedex-react/", 
