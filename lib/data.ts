@@ -100,7 +100,8 @@ export const skills = [
     "Framer Motion",
     "Material UI",
     "Bootstrap",
-    "Docker"
+    "Docker", 
+    "Zustand"
 
 
 ] as const
