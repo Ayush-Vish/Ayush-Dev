@@ -71,13 +71,13 @@ function Intro ( ) {
                                                     outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950  scale-105 transition " >
                     Contact Me Here <  BsArrowRight className="opacity-70 group-hover:translate-x-2 transition "  />
                 </Link>
-                <a className="cursor-pointer group bg-gray-100  text-gray-900  px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-200 active:scale-105 transition border border-black/10 "  href="/r.pdf" download >
+                <a className="cursor-pointer group bg-gray-100  text-gray-900  px-7 py-3 flex items-center  gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition border border-black/10 dark:bg-white/10  dark:text-white/60"  href="/r.pdf" download >
                     Resume  <FaFileDownload className="  opacity-70 group-hover:translate-y-1 transition "   />   
                 </a>
-                <a href="https://www.linkedin.com/in/ayush-vishwakarma1/" target="_blank" className="cursor-pointer  group bg-gray-100 text-gray-800  px-4 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-200  scale-105 transition border-black/10  ">
-                    <BsLinkedin className="opacity-70 group-hover:translate-x-2 transition "  />
+                <a href="https://www.linkedin.com/in/ayush-vishwakarma1/" target="_blank" className="cursor-pointer  group bg-gray-100 text-gray-800  px-4 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110   scale-105 transition border-black/10  dark:bg-white/10  dark:text-white/60 ">
+                    <BsLinkedin className="opacity-70 group-hover:translate-x-2 transition  "  />
                 </a>
-                <a href="https://github.com/Ayush-Vish/" target="_blank" className="cursor-pointer  group text-[1.35rem] bg-gray-100 text-gray-800  px-4 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-200  scale-105 transition  border-black/10 ">
+                <a href="https://github.com/Ayush-Vish/" target="_blank" className="cursor-pointer  group text-[1.35rem] bg-gray-100 text-gray-800  px-4 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110  scale-105 transition  border-black/10 dark:bg-white/10  dark:text-white/60 ">
                     <BsGithub className="opacity-70 group-hover:-translate-x-2 transition "  />
                 </a>
             </motion.div>

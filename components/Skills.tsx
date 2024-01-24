@@ -38,7 +38,7 @@ function Skills() {
                 initial="initial"
                 whileInView="animate"
                 custom={idx}
-                className='bg-white border border-black/[0.1] rounded-xl px-5 py-3 '
+                className='bg-white border border-black/[0.1] rounded-xl px-5 py-3 dark:text-white/80 dark:bg-white/10  '
                 key={idx}  > {skill}
                 </motion.li>
             ))}
