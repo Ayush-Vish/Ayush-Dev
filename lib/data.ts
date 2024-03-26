@@ -133,15 +133,15 @@ export const experienceData = [
         location : "Remote" ,
         description : "Worked on making the new Student Platform(frontend) using React and Code Runner using Docker, Amazon SQS, Amazon Lambda. " ,
         icon : React.createElement(Image, {src : "../public/devt.jpeg" ,alt:"devtoewn"}), 
-        data  : "2024"
+        date  : "2024"
     },
     {
             
         title :"Winner of Quine Track in Hack Odisha" ,
         location : "Remote" ,
-        description : "Got the first rank in Quine Track among the 100 particippation Teams" ,
+        description : "Got the first rank in Quine Track among the 100+ participating Teams" ,
         icon : React.createElement(BsMicrosoft), 
-        data  : "2023"
+        date  : "2023"
     },
 ] as const;
 
