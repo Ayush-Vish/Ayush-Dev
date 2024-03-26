@@ -6,7 +6,7 @@ function Submitbtn() {
   const {pending} = useFormStatus() ;
 
   return (
-    <button disabled={pending} type='submit' className='group disabled:bg-opacity-50  focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 text-white/90 flex items-center justify-center  gap-2  h-[3rem] w-[8rem] bg-gray-900 rounded-full outline-none transition-all'
+    <button disabled={pending} type='submit' className='group disabled:bg-opacity-50  focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 text-white/90 flex items-center justify-center  gap-2  h-[3rem] w-[8rem] dark:bg-white dark:text-black  dark:hover:text-white   bg-gray-900 rounded-full outline-none transition-all'
     
     > 
     {

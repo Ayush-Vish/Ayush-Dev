@@ -11,7 +11,6 @@ import toast from 'react-hot-toast';
 function Contact() {
   const {ref  } = useSectionViews ("Contact" , 0.5 );
   
-  // re_a8DAjF4z_Jo4W3eF9MSMgxnUCWfTzDNdC
   return (
 
     <motion.section
@@ -45,8 +44,8 @@ function Contact() {
 
         }} 
         className='  mt-10 flex flex-col '>
-            <input  name='email' required type="email" placeholder='Your Email' className='h-14 px-4 rounded-lg borderBlack' />
-            <textarea name='message' required  className='h-52 my-3 rounded-lg borderBlack p-4 '  placeholder='Your Message'  />
+            <input  name='email' required type="email" placeholder='Your Email' className='h-14 px-4 rounded-lg borderBlack dark:text-black' />
+            <textarea name='message' required  className='h-52 my-3 rounded-lg borderBlack p-4 dark:text-black '  placeholder='Your Message'  />
             <Submitbtn/>
         </form>    
     </motion.section>

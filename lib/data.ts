@@ -1,9 +1,12 @@
 import React from "react";
 import url from "@/public/Screenshot from 2023-12-07 09-23-03.png";
 import blog from "@/public/kjjsbd.png";
+import communet from "@/public/communet.png";
+
 import lms from "@/public/Screenshot from 2023-12-07 09-23-36.png";
 import pokedex from "@/public/Screenshot from 2023-12-07 09-27-10.png";
 import { BsGoogle, BsMicrosoft, BsPaintBucket } from "react-icons/bs";
+import Image from "next/image";
 
 export const links = [
     {
@@ -34,6 +37,19 @@ export const links = [
 
 
 export const projects = [
+    {
+        title : "Communet - Bulk Email Sender and Extractor",
+        description : "Chrome Extension and Backend is builted by me and ",
+        tags: ["Microservices", "Node", "Express", "MongoDB", "TypeScript" , "Docker" , "Chrome Extension"],
+        imageUrl : communet, 
+        liveLink:  "https://commu-net.vercel.app/",
+        githubLinkFrontend: "https://github.com/Commu-net/", 
+        githubLinkBackend: "https://github.com/Commu-net/"
+    }, 
+    {
+
+    }, 
+
     {
         title : "LinkShort - URL Shortener",
         description : "LinkShort is a URL Shortener made with MERN Stack ,redux and TailwindCSS. User can login, register , shorten a long URL,generate a unique QR code, make custom short URL, see the previous shortened URL,no. of clicks in the shortened Url ,can  make their own custom URl, and can delete the URL.   ",
@@ -101,39 +117,33 @@ export const skills = [
     "Material UI",
     "Bootstrap",
     "Docker", 
-    "Zustand"
+    "Zustand",
+    "Amazon SQS" ,
+    "Amazon Lambda" ,
+    "Styled Commponents", 
+    "Amazon ECS"
 
 
 ] as const
 
 
+
 export const experienceData = [
     {
 
-        title :"Software Developer at google" ,
-        location : "Bengaluruuuu" ,
-        description : "Making google Gemini an AI Based Human " ,
-        icon : React.createElement(BsGoogle), 
-        data  : "2027"
+        title :"Full Stack Developer at DevTown" ,
+        location : "Remote" ,
+        description : "Worked on making the new Student Platform(frontend) using React and Code Runner using Docker, Amazon SQS, Amazon Lambda. " ,
+        icon : React.createElement(Image, {src : "../public/devt.jpeg" ,alt:"devtoewn"}), 
+        data  : "2024"
     },
     {
             
-        title :"Software Developer at Microsoft" ,
-        location : "Hyderabad" ,
-        description : "Making google Gemini an AI Based Human " ,
+        title :"Winner of Quine Track in Hack Odisha" ,
+        location : "Remote" ,
+        description : "Got the first rank in Quine Track among the 100 particippation Teams" ,
         icon : React.createElement(BsMicrosoft), 
-        data  : "2026"
+        data  : "2023"
     },
-    {
-
-        title :"Software Developer at Atlassian" ,
-        location : "Noida" ,
-        description : "Making google Gemini an AI Based Human " ,
-        icon : React.createElement(BsPaintBucket), 
-        data  : "2027"
-    },
-        
-    
-
 ] as const;
 
