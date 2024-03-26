@@ -46,9 +46,7 @@ export const projects = [
         githubLinkFrontend: "https://github.com/Commu-net/", 
         githubLinkBackend: "https://github.com/Commu-net/"
     }, 
-    {
-
-    }, 
+   
 
     {
         title : "LinkShort - URL Shortener",
