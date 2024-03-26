@@ -39,7 +39,7 @@ export const links = [
 export const projects = [
     {
         title : "Communet - Bulk Email Sender and Extractor",
-        description : "Chrome Extension and Backend is builted by me and ",
+        description : "I have Contribution in Chrome Extension and Backend which is a Microservices based Server build using Nodejs and Deployed on Amazon EC2 instance.",
         tags: ["Microservices", "Node", "Express", "MongoDB", "TypeScript" , "Docker" , "Chrome Extension"],
         imageUrl : communet, 
         liveLink:  "https://commu-net.vercel.app/",
@@ -132,7 +132,7 @@ export const experienceData = [
         title :"Full Stack Developer at DevTown" ,
         location : "Remote" ,
         description : "Worked on making the new Student Platform(frontend) using React and Code Runner using Docker, Amazon SQS, Amazon Lambda. " ,
-        icon : React.createElement(Image, {src : "../public/devt.jpeg" ,alt:"devtoewn"}), 
+        icon : React.createElement(Image, {src : "/public/devt.jpeg" ,alt:"devtoewn" ,width:"24" , height:"24"}), 
         date  : "2024"
     },
     {
