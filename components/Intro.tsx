@@ -41,23 +41,14 @@ function Intro ( ) {
                      Ayush Vishwakarma.
                 </span>
                      I'm a <span className="font-bold"> Full Stack Developer. </span>
-                    I develop exceptional
+                    I am interested in 
                     {" "}
                     <span className="font-bold">
-                        websites and web apps
+                        building softwares
                     </span> 
                     {" "} 
-                     that provide 
-                     {" "}
-                     <span className="font-bold">
-                        intuitive, pixel-perfect
-                     </span>
-                     {" "}
-                     user interfaces with
-                     {" "}
-                     <span className="font-bold">
-                        efficient and modern backends.    
-                    </span> 
+                     
+                    
 
 
             </motion.h1>
